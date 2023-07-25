@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: hsl(235, 18%, 26%);
+  --color-btn: hsl(234, 29%, 20%);
+  --color: hsl(231, 7%, 60%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  height: 100vh;
+}
+
+.caja {
+  display: none;
+  background: #fff;
+  padding: 1rem;
+  margin: 2rem;
+  width: 60%;
+  border-radius: 30px;
+}
+.caja .left .title {
+  font-size: 3rem;
+  color: var(--color-btn);
+  margin: 3rem 3rem;
+  margin-bottom: 0;
+}
+.caja .left .paragraph {
+  margin: 1rem 3rem;
+  width: 80%;
+  font-size: 16px;
+}
+.caja .left .list li {
+  list-style: none;
+  margin: 0.5rem 3rem;
+}
+.caja .left .list li img {
+  margin-right: 1rem;
+  position: relative;
+  top: 4px;
+}
+.caja .left .form .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+.caja .left .form .text label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin: 1rem 3rem;
+  margin-bottom: 1rem;
+}
+.caja .left .form .text .warning {
+  color: #E85654;
+  font-size: small;
+}
+.caja .left .form input {
+  padding: 0.8rem 13rem 0.8rem 1rem;
+  margin: 0.5rem 3rem;
+  border: 1px solid var(--color);
+  border-radius: 10px;
+}
+.caja .left .form input:focus {
+  outline: none;
+}
+.caja .left .form .btn {
+  padding: 0.8rem 5.7rem;
+  margin: 0.5rem 3rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--color-btn);
+  color: #fff;
+}
+.caja .left .form .btn:hover {
+  background: linear-gradient(90deg, #fa677f 30%, #e76a04 90%);
+  cursor: pointer;
+}
+.caja .right img {
+  width: 30vw;
+  height: 80vh;
+}
+
+.visibled {
+  display: flex;
+}
+
+.caja2 {
+  display: none;
+  background: #fff;
+  padding: 3rem;
+  width: 25%;
+  height: 50%;
+  border-radius: 30px;
+}
+.caja2 .title {
+  font-size: 3rem;
+  color: var(--color-btn);
+  margin: 0 1rem;
+  margin-bottom: 0;
+}
+.caja2 .paragraph {
+  margin: 1rem;
+  font-size: 13.4px;
+  line-height: 1.3rem;
+}
+.caja2 .btn {
+  padding: 0.5rem 7rem;
+  margin: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--color-btn);
+  color: #fff;
+}
+.caja2 .btn:hover {
+  background: linear-gradient(90deg, #fa677f 30%, #e76a04 90%);
+  cursor: pointer;
+}
+
+.visibled2 {
+  display: block;
+}
+
+@media (max-width: 450px) {
+  section {
+    background: #fff;
+    justify-content: left;
+  }
+  .caja {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .caja .right {
+    width: 100vw;
+  }
+  .caja .right img {
+    width: 100vw;
+    height: 28rem;
+    position: relative;
+    right: 0.5rem;
+    bottom: -5rem;
+  }
+  .caja .left {
+    position: relative;
+    top: 7rem;
+  }
+  .caja .left .title {
+    margin-left: 2rem;
+    width: 100%;
+    margin-top: 0;
+    font-size: 3.5rem;
+  }
+  .caja .left .paragraph {
+    width: 90%;
+    margin: 1rem 3rem;
+    font-size: 18px;
+  }
+  .caja .left .list {
+    font-size: 18px;
+    width: 100%;
+  }
+  .caja .left .form .text {
+    width: 95%;
+  }
+  .caja .left .form input {
+    padding: 0.8rem 12rem 0.8rem 1rem;
+  }
+  .caja .left .form .btn {
+    padding: 1rem 0;
+    width: 84%;
+    margin-bottom: 3rem;
+  }
+  .caja2 {
+    width: 100vw;
+  }
+  .caja2 .title {
+    margin: 0 0.5rem;
+    font-size: 2.5rem;
+  }
+  .caja2 .paragraph {
+    font-size: 16px;
+    margin: 1rem 0.5rem;
+  }
+  .caja2 .btn {
+    margin-top: 10rem;
+    padding: 1rem 6rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
